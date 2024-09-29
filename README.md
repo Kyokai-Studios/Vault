@@ -20,4 +20,3 @@ Les contributions sont les bienvenues ! Si vous souhaitez ajouter des fonctionna
 ## **Licence**
 
 Ce projet est sous licence [GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/).
-```
