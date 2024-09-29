@@ -9,6 +9,8 @@ Ce projet implémente un **système de gestion des comptes joueurs** en Lua, con
 - Ajout, retrait, et transfert d'argent entre joueurs.
 - Sauvegarde automatique des données dans un fichier JSON.
 
+## **Wiki** [Link](https://github.com/Kyokai-Studios/Vault.wiki.git)
+
 ## **Contribuer**
 
 Les contributions sont les bienvenues ! Si vous souhaitez ajouter des fonctionnalités, corriger des bugs ou améliorer la documentation, n'hésitez pas à ouvrir une issue ou une pull request.
