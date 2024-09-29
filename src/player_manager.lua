@@ -30,9 +30,9 @@ function PlayerManager:getPlayerAccount(identifier)
         local playerData = self:loadPlayerData()
         
         if playerData[identifier] then
-            self.players[identifier] = PlayerAccount:newFromData(identifier, playerData[identifier])
+            self.players[identifier] = PlayerAccount.newFromData(identifier, playerData[identifier])
         else
-            self.players[identifier] = PlayerAccount:new(identifier)
+            self.players[identifier] = PlayerAccount.new(identifier)
         end
     end
     return self.players[identifier]
