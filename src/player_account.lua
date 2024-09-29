@@ -4,7 +4,7 @@ PlayerAccount.__index = PlayerAccount
 --- Creates a new PlayerAccount.
 -- @param identifier string: The identifier for the player account.
 -- @return PlayerAccount: A new PlayerAccount instance.
-function PlayerAccount:new(identifier)
+function PlayerAccount.new(identifier)
     local self = setmetatable({}, PlayerAccount)
     self.identifier = identifier
     self.balances = {}
@@ -20,7 +20,7 @@ end
 -- @param identifier string: The identifier for the player account.
 -- @param savedData table: The saved data for the player account.
 -- @return PlayerAccount: A new PlayerAccount instance.
-function PlayerAccount:newFromData(identifier, savedData)
+function PlayerAccount.newFromData(identifier, savedData)
     local self = setmetatable({}, PlayerAccount)
     self.identifier = identifier
     self.balances = savedData.balances or {}
