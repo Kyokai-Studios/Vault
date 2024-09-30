@@ -51,7 +51,7 @@ end
 function PlayerAccount:removeMoney(currency, amount)
     if self.balances[currency] then
         if self.balances[currency] >= amount then
-            self.balances[currency] = self.balances[currency] - amount
+            self.balances[currency] -= amount
         else
             print("Fonds insuffisants.")
         end
