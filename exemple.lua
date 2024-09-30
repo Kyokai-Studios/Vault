@@ -1,7 +1,7 @@
 local playerManager = PlayerManager
 
 RegisterCommand("balance", function(source, args, rawCommand)
-    local identifier = GetPlayerIdentifiers(source)[1]
+    local identifier = GetPlayerIdentifierByType(toPlayerId, 'licence')
     local currency = args[1] or Config.DefaultCurrency
 
     local account = playerManager:getPlayerAccount(identifier)
@@ -11,7 +11,7 @@ RegisterCommand("balance", function(source, args, rawCommand)
 end)
 
 RegisterCommand("transfer", function(source, args, rawCommand)
-    local fromIdentifier = GetPlayerIdentifiers(source)[1]
+    local fromIdentifier = GetPlayerIdentifierByType(toPlayerId, 'licence')
     local toPlayerId = tonumber(args[1])
     local amount = tonumber(args[2])
     local currency = args[3] or Config.DefaultCurrency
