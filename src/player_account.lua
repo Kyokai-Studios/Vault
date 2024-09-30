@@ -39,7 +39,7 @@ end
 -- @param amount number: The amount of money to add.
 function PlayerAccount:addMoney(currency, amount)
     if self.balances[currency] then
-        self.balances[currency] = self.balances[currency] + amount
+        self.balances[currency] += amount
     else
         print("La monnaie spécifiée n'existe pas.")
     end
